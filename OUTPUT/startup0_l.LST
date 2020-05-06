@@ -1,0 +1,171 @@
+文件：startup0_l.asm 编译器版本 HGASM 0202 页次1
+
+
+   1  0000              ;;--------------------------------------------------------------;;
+   2  0000              ;;    This file is part of the Holtek C Compiler V3 package     ;;
+   3  0000              ;;    For the initialization of static linkage variables        ;;
+   4  0000              ;;    Copyright (C) 2017 Holtek Semiconductor Inc.              ;;
+   5  0000              ;;    Version: 1.07 (Above IDE3000 V7.94)                       ;;
+   6  0000              ;;    Date:    2017/03/06                                        ;;
+   7  0000              ;;--------------------------------------------------------------;;
+   8  0000              
+   9  0000              acc equ [05h]
+  10  0000              tblp equ [07h]
+  11  0000              tblh equ [08h]
+  12  0000              ;;tbhp equ [09h] 
+  13  0000              mp0 equ [01h]
+  14  0000              r1 equ [02h]
+  15  0000              mp1l equ [03h]
+  16  0000              mp1h equ [04h]
+  17  0000              z equ [0ah].2
+  18  0000              c equ [0ah].0
+  19  0000              ifndef tbhp
+  20  0000              tbhp equ [09h]
+  21  0000              endif 
+  22  0000              extern startup_value_1:near
+  23  0000              
+  24  0000              @start .section 'code'
+  25  0000              begin_startup_value:
+  26  0000  0F00     E    mov a,low (offset startup_value_1) 
+  27  0001  0087          mov tblp,a
+  28  0002  0F00     E    mov a,high (offset startup_value_1) 
+  29  0003  0089          mov tbhp,a
+  30  0004              next_table:
+  31  0004                ;CLR WDT
+  32  0004  1487          inc tblp
+  33  0005  3D0A          sz z
+  34  0006  1489          inc tbhp
+  35  0007              ifdef USE_TABRD
+  36  0007                tabrd mp0
+  37  0007              else
+  38  0007  1D01          tabrdc mp0
+  39  0008              endif
+  40  0008  1081          sz mp0
+  41  0009  2800     R    jmp read_data1
+  42  000A  2800     R    jmp end_startup_value
+  43  000B              read_data1:
+  44  000B  1487          inc tblp
+  45  000C  3D0A          sz z
+  46  000D  1489          inc tbhp
+  47  000E              ifdef USE_TABRD
+  48  000E                tabrd mp1l
+  49  000E              else
+  50  000E  1D03          tabrdc mp1l
+  51  000F              endif
+  52  000F  0708          mov a,tblh
+  53  0010  0084          mov mp1h,a
+  54  0011              next_data:
+  55  0011  1487          inc tblp
+  56  0012  3D0A          sz z
+  57  0013  1489          inc tbhp
+  58  0014              ifdef USE_TABRD
+  59  0014                tabrd acc
+文件：startup0_l.asm 编译器版本 HGASM 0202 页次2
+
+  60  0014              else
+  61  0014  1D05          tabrdc acc
+  62  0015              endif
+  63  0015  0082          mov r1,a
+  64  0016  1781          sdz mp0
+  65  0017  2800     R    jmp $+2
+  66  0018  2800     R    jmp next_table
+  67  0019  1483          inc mp1l
+  68  001A  0708          mov a,tblh
+  69  001B  0082          mov r1,a
+  70  001C  1483          inc mp1l
+  71  001D  1781          sdz mp0
+  72  001E  2800     R    jmp next_data
+  73  001F  2800     R    jmp next_table
+  74  0020              
+  75  0020              end_startup_value:
+  76  0020              
+  77  0020              ; with tentative 0
+  78  0020              ;
+  79  0020              begin_startup_tentative:
+  80  0020              next_table_tentative:
+  81  0020                ;CLR WDT
+  82  0020  1487          inc tblp
+  83  0021  3D0A          sz z
+  84  0022  1489          inc tbhp
+  85  0023              ifdef USE_TABRD
+  86  0023                tabrd mp0
+  87  0023              else
+  88  0023  1D01          tabrdc mp0
+  89  0024              endif
+  90  0024  1081          sz mp0
+  91  0025  2800     R    jmp read_data2
+  92  0026  2800     R    jmp end_startup_tentative
+  93  0027              read_data2:
+  94  0027  1487          inc tblp
+  95  0028  3D0A          sz z
+  96  0029  1489          inc tbhp
+  97  002A              ifdef USE_TABRD
+  98  002A                tabrd mp1l
+  99  002A              else
+ 100  002A  1D03          tabrdc mp1l
+ 101  002B              endif
+ 102  002B  0708          mov a,tblh
+ 103  002C  0084          mov mp1h,a
+ 104  002D              next_data_0:
+ 105  002D  1F02          clr r1
+ 106  002E  1483          inc mp1l  
+ 107  002F  1781          sdz mp0
+ 108  0030  2800     R    jmp next_data_0
+ 109  0031  2800     R    jmp next_table_tentative
+ 110  0032              end_startup_tentative:
+ 111  0032              
+ 112  0032              startupend1:
+ 113  0032              ifndef Disable_Bit_Initial
+ 114  0032  0F00     R  	MOV A,high  bitdatasec1_start
+ 115  0033  0084        	MOV mp1h,a
+ 116  0034  0F00     R  	MOV A,offset bitdatasec1_end
+ 117  0035  0083        	mov mp1l,A
+ 118  0036  1583        	dec mp1l
+ 119  0037  350A        	clr z
+文件：startup0_l.asm 编译器版本 HGASM 0202 页次3
+
+ 120  0038  0A00     R  	sub a,offset bitdatasec1_start
+ 121  0039  3D0A        	sz z
+ 122  003A  2800     R  	jmp startupend2
+ 123  003B              L0005:
+ 124  003B  1F82        	set r1
+ 125  003C  1583        	dec mp1l
+ 126  003D  1785        	sdz  acc
+ 127  003E  2800     R  	jmp L0005
+ 128  003F              
+ 129  003F              startupend2:
+ 130  003F  0F00     R  	MOV A,high  bitdatasec0_start
+ 131  0040  0084        	MOV mp1h,a
+ 132  0041  0F00     R  	MOV A,offset bitdatasec0_end
+ 133  0042  0083        	mov mp1l,A
+ 134  0043  1583        	dec mp1l
+ 135  0044  350A        	clr z
+ 136  0045  0A00     R  	sub a,offset bitdatasec0_start
+ 137  0046  3D0A        	sz  z
+ 138  0047  2800     R  	jmp startupend3
+ 139  0048              L0006:
+ 140  0048  1F02        	clr r1
+ 141  0049  1583        	dec mp1l
+ 142  004A  1785        	sdz  acc
+ 143  004B  2800     R  	jmp L0006
+ 144  004C              startupend3:
+ 145  004C              endif
+ 146  004C                 
+ 147  0000              @ROMDATA_BASE .SECTION com_l 'CODE'  
+ 148  0000              startup_value:
+ 149  0000              ;;linker range the initial value table here
+ 150  0000              
+ 151  0000              @BITDATASEC1 .SECTION com_l 'DATA'  
+ 152  0000              bitdatasec1_start:
+ 153  0000              
+ 154  0000              @BITDATASEC1 .SECTION com_e 'DATA'  
+ 155  0000              bitdatasec1_end:
+ 156  0000              
+ 157  0000              @BITDATASEC .SECTION com_l 'DATA'  
+ 158  0000              bitdatasec0_start:
+ 159  0000              
+ 160  0000              @BITDATASEC .SECTION com_e 'DATA'  
+ 161  0000              bitdatasec0_end:
+
+
+        0 Errors, 0

@@ -1,0 +1,490 @@
+
+连接器　版本8.7.7.190806
+Input Object File: D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\MAIN_PROGRAM_V103.OBJ
+Input Object File: C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ
+Input Object File: D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ
+Input Object File: D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ
+Input Object File: D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\STARTUP0_L.OBJ
+Input Object File: D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\PID.OBJ
+
+Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0003h    0004h      CODE               PROGRAM_ENTRY (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\MAIN_PROGRAM_V103.OBJ)
+     00h     0004h     0007h    0004h      CODE               @Interrupt_Extemal_code (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     000ch     000dh    0002h      CODE               TOUCH_INT (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     00h     000eh     000eh    0001h      CODE               LIBRARY_VERSION (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     00h     000fh     0013h    0005h      CODE               _NixieTube_OFF (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0018h     001bh    0004h      CODE               @STM_ISR_code (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     001ch     0020h    0005h      CODE               _Interrupt_Extemal (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     0024h     0027h    0004h      CODE               TIME_BASE_INT (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     00h     0028h     002bh    0004h      CODE               @TimeBase1_ISR_code (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     002ch     00a4h    0079h      CODE               MAIN_PROGRAM (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\MAIN_PROGRAM_V103.OBJ)
+     00h     00a5h     066fh    05cbh      CODE               TKS_LIBRARY_CODE (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     00h     0670h     0684h    0015h      CODE               @ROMDATA_BASE (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     0685h     0695h    0011h      CODE               @crom (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0696h     06e0h    004bh      CODE               _TimeBase1_ISR (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     06e1h     0719h    0039h      CODE               _SystemInit (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     071ah     0727h    000eh      CODE               _PowerOFF (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     0728h     08b9h    0192h      CODE               _STM_ISR (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     08bah     08cah    0011h      CODE               _USER_PROGRAM_INITIAL (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     08cbh     0a12h    0148h      CODE               _Touch_Scan (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     0a13h     0a53h    0041h      CODE               _USER_PROGRAM (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     0a54h     0a65h    0012h      CODE               _ADC_GetValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0a66h     0adbh    0076h      CODE               _NTC_GetAdcValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0adch     0c34h    0159h      CODE               _NTC_HeatControl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0c35h     0c82h    004eh      CODE               _BUZZ_Control (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0c83h     0da7h    0125h      CODE               _BUZZ_ActionType (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0da8h     0e0bh    0064h      CODE               _LED_SegmentCode (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0e0ch     0e31h    0026h      CODE               _LED_Control (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0e32h     0e54h    0023h      CODE               _Mode_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0e55h     0e91h    003dh      CODE               _Up_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0e92h     0ecch    003bh      CODE               _Down_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0ecdh     0f2eh    0062h      CODE               _NixieTube_SegmentCode (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0f2fh     0fa9h    007bh      CODE               _NixieTube_TimeDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     0faah     100eh    0065h      CODE               _NixieTube_TempDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     100fh     1061h    0053h      CODE               _NixieTube_ErrCodeDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     1062h     1075h    0014h      CODE               _EEPROM_Write (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     1076h     1087h    0012h      CODE               _EEPROM_Read (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     1088h     10ach    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     10adh     10bfh    0013h      CODE               _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     10c0h     1120h    0061h      CODE               _builtin_holtek_divmodsi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     1121h     112eh    000eh      CODE               _CROM2PROM (CROM2PROM)
+     00h     112fh     1153h    0025h      CODE               _builtin_holtek_divmodhi4_isr18 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     1154h     11b4h    0061h      CODE               _builtin_holtek_divmodsi4_isr18 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     11b5h     11d9h    0025h      CODE               _builtin_holtek_divmodhi4_isr28 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     11dah     11f2h    0019h      CODE               _builtin_holtek_divmodqi4_isr28 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0080h     00b2h    0033h      DATA     0.5882    TKS_LIBRARY_DATA0 (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     00h     00b3h     00b4h    0002h      DATA     3         MAIN_DATA (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\MAIN_PROGRAM_V103.OBJ)
+     00h     00b5h     00b5h    0001h      DATA     8         @BITDATASEC (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00b6h     00b6h    0001h      DATA     35        @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00b7h     00b7h    0001h      DATA     51        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00b8h     00b8h    0001h      DATA     49        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00b9h     00b9h    0001h      DATA     33        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bah     00bah    0001h      DATA     33        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bbh     00bbh    0001h      DATA     12        @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bch     00bch    0001h      DATA     8         @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bdh     00bdh    0001h      DATA     2         @data_r104 (isr:ra~rh)
+     00h     00beh     00beh    0001h      DATA     2         @data_r204 (isr:ra~rh)
+     00h     00bfh     00bfh    0001h      DATA     2         @data_r128 (isr:ra~rh)
+     00h     00c0h     00c0h    0001h      DATA     2         @data_r228 (isr:ra~rh)
+     00h     00c1h     00c1h    0001h      DATA     29        @data_ra28 (isr:ra~rh)
+     00h     00c2h     00c2h    0001h      DATA     2         @data_r118 (isr:ra~rh)
+     00h     00c3h     00c3h    0001h      DATA     2         @data_r218 (isr:ra~rh)
+     00h     00c4h     00c4h    0001h      DATA     44        @data_rb18 (isr:ra~rh)
+     00h     00c5h     00c5h    0001h      DATA     40        @data_rc18 (isr:ra~rh)
+     00h     00c6h     00c6h    0001h      DATA     31        @data_ra18 (isr:ra~rh)
+     00h     00c7h     00c7h    0001h      DATA     5         @data_re18 (isr:ra~rh)
+     00h     00c8h     00c8h    0001h      DATA     5         @data_rf18 (isr:ra~rh)
+     00h     00c9h     00c9h    0001h      DATA     3         @data_rg18 (isr:ra~rh)
+     00h     00cah     00cah    0001h      DATA     3         @data_rh18 (isr:ra~rh)
+     00h     00cbh     00cbh    0001h      DATA     2         @data_rd18 (isr:ra~rh)
+     00h     00cch     00cch    0001h      DATA     58        @data_rb28 (isr:ra~rh)
+     00h     00cdh     00cdh    0001h      DATA     24        @data_rc28 (isr:ra~rh)
+     00h     00feh     00feh    0001h      DATA     5         @HCCINIT_time5sDelayCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00ffh     00ffh    0001h      DATA     3         @HCCINIT_time5sCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     0080h     00bbh    003ch      DATA     0         TKS_LIBRARY_DATA1 (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     01h     00bch     00bdh    0002h      DATA     6         @HCCINIT_secTimeCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     00beh     00bfh    0002h      DATA     5         @HCCINIT_tksSetTimeCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     00c0h     00c1h    0002h      DATA     7         @HCCINIT_tksPresTimeCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     00c2h     00c2h    0001h      DATA     19        @HCCINIT_tksPresValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     00c3h     00c4h    0002h      DATA     3         @HCCINIT_Timestamp (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     01h     00c5h     00c5h    0001h      DATA     5         @HCCINIT___com_2676 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00c6h     00c6h    0001h      DATA     3         @HCCINIT___com_2666 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00c7h     00c7h    0001h      DATA     4         @HCCINIT___com_2654 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00c8h     00c8h    0001h      DATA     2         @HCCINIT___com_2620 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00c9h     00c9h    0001h      DATA     3         @HCCINIT___buzzTypeOld_2591 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00cah     00cah    0001h      DATA     4         @HCCINIT___heatState_2576 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00cbh     00cch    0002h      DATA     3         @HCCINIT_periodOld (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00cdh     00cdh    0001h      DATA     3         @HCCINIT_adcValueErrorCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00ceh     00cfh    0002h      DATA     4         @HCCINIT_adcValueSum (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00d0h     00d0h    0001h      DATA     5         @HCCINIT_adcSumCnt (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00d1h     00d2h    0002h      DATA     5         @HCCINIT_ntcAdcVaule (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00d3h     00d4h    0002h      DATA     2         @HCCINIT0___preheatStopTime_2579 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00d5h     00d5h    0001h      DATA     14        @HCCINIT0_nixTubeDisType (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00d6h     00d9h    0004h      DATA     7.25      @HCCINIT0_tksFun (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00dah     00dah    0001h      DATA     14        @HCCINIT0_buzzType (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00dbh     00dch    0002h      DATA     25        @HCCINIT0_buzzONTime (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00ddh     00deh    0002h      DATA     3         @HCCINIT0_adcConverterValueOld (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00dfh     00e0h    0002h      DATA     6         @HCCINIT0_adcConverterValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00e1h     00e3h    0003h      DATA     0         @HCCINIT0_relayType (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00e4h     00e5h    0002h      DATA     11        @HCCINIT0_stopDownCount (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00e6h     00e6h    0001h      DATA     6         @HCCINIT0_interDistime (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00e7h     00ech    0006h      DATA     10.167    @HCCINIT0_sysWork (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00edh     00eeh    0002h      DATA     21        @HCCINIT0_ledUnion (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     01h     00efh     00efh    0001h      DATA     2         @data_r328 (isr:ra~rh)
+     01h     00f0h     00f0h    0001h      DATA     2         @data_r428 (isr:ra~rh)
+     01h     00f1h     00f1h    0001h      DATA     2         @data_r528 (isr:ra~rh)
+     01h     00f2h     00f2h    0001h      DATA     2         @data_r628 (isr:ra~rh)
+     01h     00f3h     00f3h    0001h      DATA     2         @data_r318 (isr:ra~rh)
+     01h     00f4h     00f4h    0001h      DATA     2         @data_r418 (isr:ra~rh)
+     01h     00f5h     00f5h    0001h      DATA     2         @data_r518 (isr:ra~rh)
+     01h     00f6h     00f6h    0001h      DATA     2         @data_r618 (isr:ra~rh)
+     02h     0080h     00cfh    0050h      DATA     0         TKS_LIBRARY_DATA2 (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+     03h     0080h     00deh    005fh      DATA     0         TKS_LIBRARY_DATA3 (C:\Users\fae5\AppData\Local\Temp\BS66F350_LIBV413.OBJ)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00f0h     00f0h    0000h      LOCAL    0         @dummy4 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         _Interrupt_Extemal (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         @dummy40 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00efh     00efh    0001h      LOCAL    3         _TimeBase1_ISR (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00e1h     00e3h    0003h      LOCAL    3.3333    _LED_Control (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00dfh     00e0h    0002h      LOCAL    4.5       _LED_SegmentCode (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00e7h     00eeh    0008h      LOCAL    2.375     _NixieTube_TimeDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00dfh     00e6h    0008h      LOCAL    8.625     _builtin_holtek_divmodhi4_isr28 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00dfh     00e0h    0002h      LOCAL    4.5       _NixieTube_SegmentCode (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00dfh     00e3h    0005h      LOCAL    7         _builtin_holtek_divmodqi4_isr28 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00dfh     00dfh    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00e7h     00e9h    0003h      LOCAL    4.3333    _NixieTube_TempDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00e1h     00e2h    0002h      LOCAL    5         _NixieTube_ErrCodeDisplay (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00dfh     00dfh    0000h      LOCAL    0         @dummy24 (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00dfh     00dfh    0000h      LOCAL    0         _STM_ISR (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00deh     00deh    0001h      LOCAL    5         _BUZZ_ActionType (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00dch     00ddh    0002h      LOCAL    10        _BUZZ_Control (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00ceh     00dbh    000eh      LOCAL    6.2143    _builtin_holtek_divmodsi4_isr18 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00ceh     00d5h    0008h      LOCAL    4.25      _builtin_holtek_divmodhi4_isr18 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00ceh     00ceh    0000h      LOCAL    0         _PowerOFF (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00ceh     00ceh    0000h      LOCAL    0         _NixieTube_OFF (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         _USER_PROGRAM_INITIAL (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         _SystemInit (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00feh     00feh    0000h      LOCAL    0         _USER_PROGRAM (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00f6h     00f6h    0001h      LOCAL    10        _Touch_Scan (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\USER_PROGRAM.OBJ)
+     00h     00f0h     00f5h    0006h      LOCAL    5.1667    _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f6h     00f6h    0000h      LOCAL    0         _Down_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         _Mode_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f6h     00f6h    0000h      LOCAL    0         _Up_Contorl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00f7h    0008h      LOCAL    5.125     _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f8h     00f8h    0000h      LOCAL    0         _NTC_GetAdcValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00f0h    0000h      LOCAL    0         _ADC_GetValue (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     03h     00dfh     00e2h    0004h      LOCAL    6         _NTC_HeatControl (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00fdh    000eh      LOCAL    7.0714    _builtin_holtek_divmodsi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+
+     Indepentent Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00f0h     00f1h    0002h      ILOCAL   1         _EEPROM_Write (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+     00h     00f0h     00f0h    0001h      ILOCAL   1         _EEPROM_Read (D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\APP.OBJ)
+
+     Public Symbols Information
+     Address            Public by Name
+     0a54h              _ADC_GetValue
+     00aah[3]           _ANY_KEY_PRESSF
+     00bfh              _BS66F350_LIBV413
+     00a5h              _BS66F350_LIBV413_INITIAL
+     0c83h              _BUZZ_ActionType
+     0c35h              _BUZZ_Control
+     00dch              _BUZZ_Control_2
+     0244h              _CHECK_KEY_WAKEUP
+     1121h              _Crom2Prom
+     1121h              _Crom2PromNext
+     0097h              _DATA_BUF
+     0685h              _DIG_CODE
+     0e92h              _Down_Contorl
+     1076h              _EEPROM_Read
+     1062h              _EEPROM_Write
+     00aah[0]           _FORCE_CALIBRATEF
+     0658h              _GET_ENV_VALUE
+     064ch              _GET_KEY_AMOUNT
+     064eh              _GET_KEY_BITMAP
+     0647h              _GET_LIB_VER
+     0655h              _GET_RCC_VALUE
+     065bh              _GET_REF_VALUE
+     0080h              _GLOBE_VARIES
+     001ch              _Interrupt_Extemal
+     00a5h              _KEY_DATA
+     00a2h              _KEY_IO_SEL
+     0380h              _KEY_REF
+     0180h              _KEY_STATUS
+     0e0ch              _LED_Control
+     00e1h              _LED_Control_2
+     0da8h              _LED_SegmentCode
+     00a5h              _LIBRARY_RESET
+     0070h              _LOAD_HXT_REFERENCE
+     0070h              _LOAD_TKS_GLOBE_VARIES
+     0e32h              _Mode_Contorl
+     0a66h              _NTC_GetAdcValue
+     0adch              _NTC_HeatControl
+     100fh              _NixieTube_ErrCodeDisplay
+     000fh              _NixieTube_OFF
+     0ecdh              _NixieTube_SegmentCode
+     0faah              _NixieTube_TempDisplay
+     0f2fh              _NixieTube_TimeDisplay
+     00e7h              _NixieTube_TimeDisplay_2
+     071ah              _PowerOFF
+     009fh              _SAMPLE_TIMES
+     00aah[2]           _SCAN_CYCLEF
+     00a0h              _STANDBY_TIME
+     0728h              _STM_ISR
+     06e1h              _SystemInit
+     00aah[5]           _TKS_250MSF
+     00aah[6]           _TKS_500MSF
+     00aah[4]           _TKS_63MSF
+     00aah[1]           _TKS_ACTIVEF
+     00aah              _TKS_FLAGA
+     00a1h              _TKS_TIME_BASE
+     0696h              _TimeBase1_ISR
+     01c3h              _Timestamp
+     08cbh              _Touch_Scan
+     0a13h              _USER_PROGRAM
+     08bah              _USER_PROGRAM_INITIAL
+     0e55h              _Up_Contorl
+     01dfh              _adcConverterValue
+     01ddh              _adcConverterValueOld
+     10c0h              _builtin_holtek_divmodsi4_isr00
+     1154h              _builtin_holtek_divmodsi4_isr18
+     10adh              _builtin_holtek_mulhi3_isr00
+     1088h              _builtin_holtek_udivmodhi4_isr00
+     00f0h              _builtin_holtek_udivmodhi4_isr00_2
+     112fh              _builtin_holtek_udivmodhi4_isr18
+     11b5h              _builtin_holtek_udivmodhi4_isr28
+     00e4h              _builtin_holtek_udivmodhi4_isr28_2
+     11dah              _builtin_holtek_udivmodqi4_isr28
+     10cfh              _builtin_holtek_udivmodsi4_isr00
+     00f8h              _builtin_holtek_udivmodsi4_isr00_2
+     1163h              _builtin_holtek_udivmodsi4_isr18
+     00ceh              _builtin_holtek_udivmodsi4_isr18_2
+     01dbh              _buzzONTime
+     01dah              _buzzType
+     01e6h              _interDistime
+     01edh              _ledUnion
+     01d5h              _nixTubeDisType
+     01d1h              _ntcAdcVaule
+     068dh              _ntcTempArr
+     01e1h              _relayType
+     01e4h              _stopDownCount
+     01e7h              _sysWork
+     01d6h              _tksFun
+     00bdh              r104
+     00c2h              r118
+     00bfh              r128
+     00beh              r204
+     00c3h              r218
+     00c0h              r228
+     01f3h              r318
+     01efh              r328
+     01f4h              r418
+     01f0h              r428
+     01f5h              r518
+     01f1h              r528
+     01f6h              r618
+     01f2h              r628
+     00b6h              ra
+     00c6h              ra18
+     00c1h              ra28
+     00b7h              rb
+     00c4h              rb18
+     00cch              rb28
+     00b8h              rc
+     00c5h              rc18
+     00cdh              rc28
+     00b9h              rd
+     00cbh              rd18
+     00bah              re
+     00c7h              re18
+     00bbh              rf
+     00c8h              rf18
+     00bch              rg
+     00c9h              rg18
+     00cah              rh18
+
+     Address            Public by Value
+     000fh              _NixieTube_OFF
+     001ch              _Interrupt_Extemal
+     0070h              _LOAD_TKS_GLOBE_VARIES
+     0070h              _LOAD_HXT_REFERENCE
+     0080h              _GLOBE_VARIES
+     0097h              _DATA_BUF
+     009fh              _SAMPLE_TIMES
+     00a0h              _STANDBY_TIME
+     00a1h              _TKS_TIME_BASE
+     00a2h              _KEY_IO_SEL
+     00a5h              _KEY_DATA
+     00a5h              _BS66F350_LIBV413_INITIAL
+     00a5h              _LIBRARY_RESET
+     00aah              _TKS_FLAGA
+     00b6h              ra
+     00b7h              rb
+     00b8h              rc
+     00b9h              rd
+     00bah              re
+     00bbh              rf
+     00bch              rg
+     00bdh              r104
+     00beh              r204
+     00bfh              _BS66F350_LIBV413
+     00bfh              r128
+     00c0h              r228
+     00c1h              ra28
+     00c2h              r118
+     00c3h              r218
+     00c4h              rb18
+     00c5h              rc18
+     00c6h              ra18
+     00c7h              re18
+     00c8h              rf18
+     00c9h              rg18
+     00cah              rh18
+     00cbh              rd18
+     00cch              rb28
+     00cdh              rc28
+     00ceh              _builtin_holtek_udivmodsi4_isr18_2
+     00dch              _BUZZ_Control_2
+     00e1h              _LED_Control_2
+     00e4h              _builtin_holtek_udivmodhi4_isr28_2
+     00e7h              _NixieTube_TimeDisplay_2
+     00f0h              _builtin_holtek_udivmodhi4_isr00_2
+     00f8h              _builtin_holtek_udivmodsi4_isr00_2
+     0180h              _KEY_STATUS
+     01c3h              _Timestamp
+     01d1h              _ntcAdcVaule
+     01d5h              _nixTubeDisType
+     01d6h              _tksFun
+     01dah              _buzzType
+     01dbh              _buzzONTime
+     01ddh              _adcConverterValueOld
+     01dfh              _adcConverterValue
+     01e1h              _relayType
+     01e4h              _stopDownCount
+     01e6h              _interDistime
+     01e7h              _sysWork
+     01edh              _ledUnion
+     01efh              r328
+     01f0h              r428
+     01f1h              r528
+     01f2h              r628
+     01f3h              r318
+     01f4h              r418
+     01f5h              r518
+     01f6h              r618
+     0244h              _CHECK_KEY_WAKEUP
+     0380h              _KEY_REF
+     00aah[0]           _FORCE_CALIBRATEF
+     00aah[1]           _TKS_ACTIVEF
+     00aah[2]           _SCAN_CYCLEF
+     00aah[3]           _ANY_KEY_PRESSF
+     00aah[4]           _TKS_63MSF
+     00aah[5]           _TKS_250MSF
+     00aah[6]           _TKS_500MSF
+     0647h              _GET_LIB_VER
+     064ch              _GET_KEY_AMOUNT
+     064eh              _GET_KEY_BITMAP
+     0655h              _GET_RCC_VALUE
+     0658h              _GET_ENV_VALUE
+     065bh              _GET_REF_VALUE
+     0685h              _DIG_CODE
+     068dh              _ntcTempArr
+     0696h              _TimeBase1_ISR
+     06e1h              _SystemInit
+     071ah              _PowerOFF
+     0728h              _STM_ISR
+     08bah              _USER_PROGRAM_INITIAL
+     08cbh              _Touch_Scan
+     0a13h              _USER_PROGRAM
+     0a54h              _ADC_GetValue
+     0a66h              _NTC_GetAdcValue
+     0adch              _NTC_HeatControl
+     0c35h              _BUZZ_Control
+     0c83h              _BUZZ_ActionType
+     0da8h              _LED_SegmentCode
+     0e0ch              _LED_Control
+     0e32h              _Mode_Contorl
+     0e55h              _Up_Contorl
+     0e92h              _Down_Contorl
+     0ecdh              _NixieTube_SegmentCode
+     0f2fh              _NixieTube_TimeDisplay
+     0faah              _NixieTube_TempDisplay
+     100fh              _NixieTube_ErrCodeDisplay
+     1062h              _EEPROM_Write
+     1076h              _EEPROM_Read
+     1088h              _builtin_holtek_udivmodhi4_isr00
+     10adh              _builtin_holtek_mulhi3_isr00
+     10c0h              _builtin_holtek_divmodsi4_isr00
+     10cfh              _builtin_holtek_udivmodsi4_isr00
+     1121h              _Crom2Prom
+     1121h              _Crom2PromNext
+     112fh              _builtin_holtek_udivmodhi4_isr18
+     1154h              _builtin_holtek_divmodsi4_isr18
+     1163h              _builtin_holtek_udivmodsi4_isr18
+     11b5h              _builtin_holtek_udivmodhi4_isr28
+     11dah              _builtin_holtek_udivmodqi4_isr28
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     2000h     11e8h    55%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0080h     0080h    100%
+     01h       0080h     0077h    92%
+     02h       0080h     0050h    62%
+     03h       0080h     0063h    77%
+     04h       0080h     0000h    0%
+     05h       0080h     0000h    0%
+     Total     0300h     01aah    55%
+
+Use Stack Count
+_Interrupt_Extemal: 0
+_TimeBase1_ISR: 2
+_STM_ISR: 3
+_USER_PROGRAM_INITIAL: 2
+_USER_PROGRAM: 3
+
+Call Tree
+    @dummy4
+        _Interrupt_Extemal (0)
+    @dummy40
+        _TimeBase1_ISR (0)
+            _LED_Control (1)
+                _LED_SegmentCode (2)
+            _NixieTube_TimeDisplay (1)
+                _builtin_holtek_divmodhi4_isr28 (2)
+                _NixieTube_SegmentCode (2)
+                _builtin_holtek_divmodqi4_isr28 (2)
+                _Crom2Prom (2)
+            _NixieTube_TempDisplay (1)
+                _NixieTube_SegmentCode (2)
+                _builtin_holtek_divmodhi4_isr28 (2)
+                _Crom2Prom (2)
+            _NixieTube_ErrCodeDisplay (1)
+                _NixieTube_SegmentCode (2)
+    @dummy24
+        _STM_ISR (0)
+            _BUZZ_ActionType (1)
+                _BUZZ_Control (2)
+                    _builtin_holtek_divmodsi4_isr18 (3)
+            _builtin_holtek_divmodhi4_isr18 (1)
+            _PowerOFF (1)
+                _NixieTube_OFF (2)
+    _USER_PROGRAM_INITIAL
+        _SystemInit (0)
+        _PowerOFF (0)
+            _NixieTube_OFF (1)
+    _USER_PROGRAM
+        _Touch_Scan (0)
+            _PowerOFF (1)
+                _NixieTube_OFF (2)
+            _builtin_holtek_mulhi3_isr00 (1)
+            _Down_Contorl (1)
+                _builtin_holtek_mulhi3_isr00 (2)
+            _Mode_Contorl (1)
+            _Up_Contorl (1)
+                _builtin_holtek_mulhi3_isr00 (2)
+        _PowerOFF (0)
+            _NixieTube_OFF (1)
+        _builtin_holtek_divmodhi4_isr00 (0)
+        _NTC_GetAdcValue (0)
+            _ADC_GetValue (1)
+            _builtin_holtek_divmodhi4_isr00 (1)
+        _NTC_HeatControl (0)
+            _Crom2Prom (1)
+            _Crom2Prom (1)
+            _builtin_holtek_divmodsi4_isr00 (1)
+
+HLINK : 程序的开始执行点在程序段'PROGRAM_ENTRY'（地址0）。定义在'D:\FJ-Holtek_Project\VSCode\BS66FV350_20200424-C280\OUTPUT\MAIN_PROGRAM_V103.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0
